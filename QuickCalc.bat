@@ -1,0 +1,2 @@
+python QuickCalc.py
+pause
