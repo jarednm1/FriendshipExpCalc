@@ -10,7 +10,7 @@ while True:
 
         TotalNumberGiven = BestFriends + UltraFriends + GreatFriends + GoodFriends
 
-        if (TotalNumberGiven >= 30)
+        if (TotalNumberGiven >= 30):
             print(GiftWarning)
             print("\n\n")
 
