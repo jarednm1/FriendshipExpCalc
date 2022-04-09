@@ -1,3 +1,5 @@
+GiftWarning = "WARNING: You can only OPEN 30 gifts per day. You have given 30 or more total friends. Keep in mind you may need to send a gift to someone!"
+
 while True:
     try:
         #Input section
@@ -5,6 +7,12 @@ while True:
         UltraFriends = int(input("How Many Ultra Friends?: "))
         GreatFriends = int(input("How Many Great Friends?: "))
         GoodFriends = int(input("How Many Good Friends?:   "))
+
+        TotalNumberGiven = BestFriends + UltraFriends + GreatFriends + GoodFriends
+
+        if (TotalNumberGiven >= 30)
+            print(GiftWarning)
+            print("\n\n")
 
         EggActive = str(input("Do You/Will You Have A Lucky Egg Active? (Y/N): ")).upper()
 
