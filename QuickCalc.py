@@ -3,10 +3,11 @@ GiftWarning = "WARNING: You can only OPEN 30 gifts per day. You have given 30 or
 while True:
     try:
         #Input section
-        BestFriends = int(input("How Many Best Friends?:   "))
+        BestFriends = int(input("How Many Best Friends?:  "))
         UltraFriends = int(input("How Many Ultra Friends?: "))
         GreatFriends = int(input("How Many Great Friends?: "))
-        GoodFriends = int(input("How Many Good Friends?:   "))
+        GoodFriends = int(input("How Many Good Friends?:  "))
+        ExtraXp = int(input ("Extra Xp?: "))
 
         TotalNumberGiven = BestFriends + UltraFriends + GreatFriends + GoodFriends
 
@@ -23,6 +24,7 @@ while True:
         GoodFriendXp = 3000
 
         TotalExp = (BestFriends * BestFriendExp) + (UltraFriends * UltraFriendExp) + (GreatFriends * GreatFriendXp) + (GoodFriends * GoodFriendXp)
+        TotalExp = TotalExp + ExtraXp
 
         if (EggActive == "Y"):
             TotalExp = TotalExp * 2
